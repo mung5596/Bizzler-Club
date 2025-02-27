@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">IGCSE Business Study Notes</h2>
+    <div class="row">
+        {% for topic in topic_list %}
+        <div class="col p-0 border mx-5 my-3">
+            <table class="table table-hover mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>{{ topic.name }}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for note in topic.topicnotes_set.all %}
+                    <tr>
+                        <td><a href="{{ note.link }}" target="_blank">{{ note.name }}</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% if forloop.counter|divisibleby:2 and not forloop.last %}
+            </div><div class="row">
+        {% endif %}
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock %}

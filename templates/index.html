@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Column: Text -->
+            <div class="col">
+                <div class="jumbotron bg-light text-dark p-5 rounded">
+                    <h1 class="display-4">Welcome to Bizzler Club!</h1>
+                    <p class="lead">We are dedicated to helping you excel in IGCSE Business.</p>
+                    <hr class="my-4">
+                    <p>Our project is focused on providing comprehensive resources and support to assist you in your IGCSE Business studies. Explore past papers, study notes, and more to enhance your learning experience.</p>
+                    <a class="btn btn-primary btn-lg" href="#learnmore" role="button">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Section: Tutors -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h2 class="mb-4">Our Prestigious Tutors</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Tutor 1 -->
+            <div class="col-md-2 text-center mx-5">
+                <img src="{% static 'images/caleb.jpg' %}" class="img-fluid mb-2" alt="Caleb" style="max-height: 200px">
+                <p>Caleb Kim</p>
+            </div>
+
+            <!-- Tutor 2 -->
+            <div class="col-md-2 text-center mx-5">
+                <img src="{% static 'images/john.jpg' %}" class="img-fluid mb-2" alt="John" style="max-height: 200px">
+                <p>John Kim</p>
+            </div>
+        </div>
+
+
+        <div class="row mt-4" id="learnmore">
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Past Papers</h5>
+                        <p class="card-text">Access a wide range of past papers to practice and improve your skills.</p>
+                        <a href="pastpaper" class="btn btn-secondary">Go to Past Papers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Study Notes</h5>
+                        <p class="card-text">Find detailed study notes and resources to help you prepare for exams.</p>
+                        <a href="notes" class="btn btn-secondary">Explore Study Notes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Us</h5>
+                        <p class="card-text">Have questions or need support? Get in touch with us.</p>
+                        <a href="aboutus" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-dark text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="text-center p-3">
+                2024 Bizzler Club.
+            </div>
+        </div>
+    </footer>
+</body>
+
+{% endblock %}

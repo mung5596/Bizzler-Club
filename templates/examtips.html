@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Exam Tips</h1>
+
+    <!-- Table of Contents -->
+    <div class="list-group mb-4">
+        <a href="#study-tips" class="list-group-item list-group-item-action">Study Tips</a>
+        <a href="#time-management" class="list-group-item list-group-item-action">Time Management</a>
+        <a href="#exam-day-preparation" class="list-group-item list-group-item-action">Exam Day Preparation</a>
+        <a href="#stress-management" class="list-group-item list-group-item-action">Stress Management</a>
+        <a href="#subject-specific-tips" class="list-group-item list-group-item-action">Subject-Specific Tips</a>
+    </div>
+
+    <!-- Section 1: Study Tips -->
+    <section id="study-tips" class="mb-5">
+        <h2>Study Tips</h2>
+        <p>Find detailed strategies for effective studying, including note-taking techniques, active recall, and more.</p>
+        <a href="files/study_tips.pdf" class="btn btn-primary" target="_blank">Download Study Tips (PDF)</a>
+    </section>
+
+    <!-- Section 2: Time Management -->
+    <section id="time-management" class="mb-5">
+        <h2>Time Management</h2>
+        <p>Learn how to plan your study schedule, balance subjects, and avoid procrastination.</p>
+        <a href="files/time_management.pdf" class="btn btn-primary" target="_blank">Download Time Management Tips (PDF)</a>
+    </section>
+
+    <!-- Section 3: Exam Day Preparation -->
+    <section id="exam-day-preparation" class="mb-5">
+        <h2>Exam Day Preparation</h2>
+        <p>Tips to help you prepare on the day of your exam, from what to bring to the exam hall to mental preparation.</p>
+        <a href="files/exam_day_preparation.pdf" class="btn btn-primary" target="_blank">Download Exam Day Preparation Tips (PDF)</a>
+    </section>
+
+    <!-- Section 4: Stress Management -->
+    <section id="stress-management" class="mb-5">
+        <h2>Stress Management</h2>
+        <p>Discover techniques to manage exam stress and anxiety to stay calm and focused during your exams.</p>
+        <a href="files/stress_management.pdf" class="btn btn-primary" target="_blank">Download Stress Management Tips (PDF)</a>
+    </section>
+
+    <!-- Section 5: Subject-Specific Tips -->
+    <section id="subject-specific-tips" class="mb-5">
+        <h2>Subject-Specific Tips</h2>
+        <p>Get tailored tips for different subjects like Mathematics, Science, History, and more.</p>
+        <a href="files/subject_specific_tips.pdf" class="btn btn-primary" target="_blank">Download Subject-Specific Tips (PDF)</a>
+    </section>
+</div>
+{% endblock %}

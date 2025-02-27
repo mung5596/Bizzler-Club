@@ -1,0 +1,12 @@
+.table-hover tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.col {
+    flex: 1;
+}
